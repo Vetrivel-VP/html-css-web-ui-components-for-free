@@ -1,0 +1,97 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 120px;
+  overflow: hidden;
+}
+
+.loader {
+  position: relative;
+  width: 2.5em;
+  height: 2.5em;
+  transform: rotate(165deg);
+}
+
+.loader::before,
+.loader::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 0.25em;
+}
+
+.loader::before {
+  animation: before_8 2s infinite;
+}
+
+.loader::after {
+  animation: after_8 2s infinite;
+}
+
+@keyframes before_8 {
+  0% {
+    width: 0.5em;
+    /* box-shadow : [horizontal-offset] [vertical-offset] [blur-radius] [spread-radius] [color] */
+    box-shadow: 1em -0em rgba(225, 20, 98, 0.75),
+      -1em 0.5em rgba(111, 202, 220, 0.75);
+  }
+
+  35% {
+    width: 2.5em;
+    box-shadow: 0 -0.5em rgba(225, 20, 98, 0.75),
+      0 0.5em rgba(111, 202, 220, 0.75);
+  }
+
+  70% {
+    width: 0.5em;
+    box-shadow: -1em -0.5em rgba(225, 20, 98, 0.75),
+      1em 0.5em rgba(111, 202, 220, 0.75);
+  }
+
+  100% {
+    box-shadow: 1em -0.5em rgba(225, 20, 98, 0.75),
+      -1em 0.5em rgba(111, 202, 220, 0.75);
+  }
+}
+
+@keyframes after_8 {
+  0% {
+    height: 0.5em;
+    box-shadow: 0.5em 1em rgba(61, 184, 143, 0.75),
+      -0.5em -1em rgba(223, 169, 32, 0.75);
+  }
+
+  35% {
+    height: 2.5em;
+    box-shadow: 0.5em 0 rgba(61, 184, 143, 0.75),
+      -0.5em 0 rgba(223, 169, 32, 0.75);
+  }
+
+  70% {
+    height: 0.5em;
+    box-shadow: 0.5em -1em rgba(61, 184, 143, 0.75),
+      -0.5em 1em rgba(223, 169, 32, 0.75);
+  }
+
+  100% {
+    box-shadow: 0.5em 1em rgba(61, 184, 143, 0.75),
+      -0.5em -1em rgba(223, 169, 32, 0.75);
+  }
+}

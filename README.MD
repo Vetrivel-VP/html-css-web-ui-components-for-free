@@ -72,6 +72,13 @@ Each subfolder contains:
 2. Create a new branch.
 3. Submit a pull request with your changes.
 
+## 📜 License
+
+This project is licensed under the [MIT License](./LICENSE).  
+Feel free to use these utilities in your personal or commercial projects with attribution.
+
+---
+
 ## 🌟 Support
 
 If you like this project, consider giving it a ⭐ on GitHub!

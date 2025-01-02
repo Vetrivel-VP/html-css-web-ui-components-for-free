@@ -32,7 +32,7 @@ If you have new utility ideas or enhancements for existing components:
 
 ## 📜 License
 
-This project is licensed under the [MIT License](../LICENSE).  
+This project is licensed under the [MIT License](../../LICENSE).  
 Feel free to use these utilities in your personal or commercial projects with attribution.
 
 ---
